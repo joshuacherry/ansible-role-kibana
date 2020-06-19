@@ -1,0 +1,6 @@
+# Find a full example with descriptions at
+# https://github.com/elastic/kibana/blob/master/config/kibana.yml
+
+{% if kibana_config %}
+{{ kibana_config | to_nice_yaml(indent=2) }}
+{% endif %}
